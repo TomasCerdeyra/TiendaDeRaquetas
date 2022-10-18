@@ -1,0 +1,151 @@
+.section2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 527px) {
+    .section2 {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1189px) {
+    .section2 {
+        justify-content: initial;
+    }
+
+}
+
+
+.setion2Titulo {
+    width: 530px;
+    height: 468px;
+    background-image: url("../../assets/PelotaTenis/ball-color-court-1405355.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .setion2Titulo {
+        padding: 0 50px 0 0;
+    }
+}
+
+h3 {
+    color: #fff;
+    line-height: 1.28;
+    letter-spacing: -0.06px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+h3 span {
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3em
+    }
+}
+
+.section2P {
+    line-height: 1.67;
+    letter-spacing: 0.51px;
+    color: #fff;
+    width: 240px;
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .section2P {
+        font-size: 1.4em
+    }
+}
+
+/*Buttons*/
+
+.contenedorButtons {
+    display: flex;
+    width: 200px;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .contenedorButtons {
+        width: 230px;
+    }
+}
+
+
+.button {
+    border-radius: 50%;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+}
+
+/*raquetas*/
+.contenedorGenerarlRaqueta {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 10px;
+}
+
+@media (min-width: 1024px) {
+    .contenedorGenerarlRaqueta {
+        flex-direction: row;
+    }
+}
+
+
+.contenedorRaqueta {
+    width: 210px;
+}
+
+@media (min-width: 1350px) {
+    .contenedorRaqueta {
+        width: 250px;
+    }
+}
+
+
+
+.numeroRaqueta {
+    background-color: #cbe346;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.imgRaqueta{
+    width: 200px;
+}
+
+
+/*----*/
+
+.FotoJugador {
+    width: 100%;
+}

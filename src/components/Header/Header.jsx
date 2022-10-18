@@ -18,6 +18,9 @@ const Header = () => {
     return (
         <header>
             <div className={despliegueMenu ? 'contenedorNavegacion' : 'ocultar'}>
+                <div className='contenedorPngMenuDesplegable'>
+                    <img className='pngMenu' src={menu} alt="Pelota de tenis" onClick={despliegue} />
+                </div>
                 <nav >
                     <ul className='contenedorInteriorNav1'>
                         <li className='nav inicio' onClick={despliegue}>Inicio</li>
@@ -25,7 +28,7 @@ const Header = () => {
                         <li className='nav' onClick={despliegue}>Historia</li>
                         <li className='nav' onClick={despliegue}>Contacto</li>
                     </ul>
-                    <hr className='lineInicio'/>
+                    <hr className='lineInicio' />
                 </nav>
                 <div className='contenedorInteriorNav2'>
                     <p className='nav' onClick={despliegue}>ES</p>

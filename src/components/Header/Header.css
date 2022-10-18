@@ -35,13 +35,13 @@ header {
     grid-area: pelota;
     display: flex;
     justify-content: center;
-    width: 70px;
     padding: 5px;
 }
 
 @media (min-width: 550px) {
     .line {
         border-right: 2px solid white;
+        width: 70px;
     }
 }
 
@@ -58,6 +58,16 @@ header {
     }
 }
 
+.contenedorPngMenuDesplegable{
+    display: flex;
+    justify-content: end;
+}
+@media (min-width: 768px) {
+    .contenedorPngMenuDesplegable {
+        display: none;
+    }
+}
+
 .pngMenu {
     grid-area: menuu;
     margin: 5px 5px 0 0;
@@ -71,7 +81,7 @@ header {
     }
 }
 
-/*Nav*/
+/*Nav */
 .contenedorNavegacion {
     background-color: rgb(186, 89, 54);
     z-index: 100;
@@ -79,8 +89,8 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 200px;
+    justify-content: space-between;
+    position: absolute;
 }
 
 .ocultar {
@@ -97,6 +107,7 @@ header {
     }
 }
 
+/*NAV 1*/
 .contenedorInteriorNav1 {
     display: flex;
     flex-direction: column;
@@ -105,6 +116,7 @@ header {
     gap: 50px;
     color: #fff;
     letter-spacing: 1.5px;
+    margin: 0 0 150px 0;
 }
 
 @media (min-width: 768px) {
@@ -118,6 +130,7 @@ header {
 @media (min-width: 1024px) {
     .contenedorInteriorNav1{
         margin: 50px 0 0 20px;
+        font-size: 1.2em;
     }
 }
 
@@ -125,24 +138,34 @@ header {
     font-weight: bold;
 }
 
-.lineInicio {
-    margin: 5px 0 0 19px;
-    width: 18px;
-    height: 2px;
+@media (min-width: 768px) {
+    .lineInicio {
+        margin: 5px 0 0 19px;
+        width: 18px;
+        height: 2px;
+    }
 }
 
 
+/*Nav 2 (ES EN)*/
 .contenedorInteriorNav2 {
     display: flex;
     justify-content: center;
     gap: 10px;
     color: #fff;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
     .contenedorInteriorNav2 {
         margin: 35px 40px 0 0;
         font-size: .7em;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedorInteriorNav2 {
+        margin: 35px 40px 0 0;
+        font-size: .9em;
     }
 }
 
