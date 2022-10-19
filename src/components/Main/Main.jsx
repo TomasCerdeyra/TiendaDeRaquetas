@@ -6,10 +6,25 @@ import raqueta from '../../assets/Raquetas/group-10.jpg'
 const Main = ({ }) => {
     return (
         <main>
-            <section>
+            <section className='section1'>
+                <div className='contenedorSpan'>
+                    <span className='spanTennis'>
+                        TENNIS
+                    </span>
+                </div>
+                <div className='contenedorH2'>
+                    <h2>Raquetas.Accesorios.Pelotas.</h2>
+                    <p>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profecional.</p>
+                </div>
+                <div className='contenedorButtonHistoria'>
+                    <button className='buttonHistoria'>HISTORIA →</button>
+                </div>
 
             </section>
             <section className='section2' >
+
+
+
                 <div className='setion2Titulo'>
                     <div>
                         <h3>Nuestras <span>Raquetas</span></h3>
