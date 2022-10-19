@@ -48,7 +48,6 @@ const Footer = () => {
 
                 <div className='contenedorIconoPelota'>
                     <img src={iconoPelota} srcSet={`${iconoPelota2} 2x, ${iconoPelota3} 3x `} alt="" />
-
                 </div>
             </div>
 

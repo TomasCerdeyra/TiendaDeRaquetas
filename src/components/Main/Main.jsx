@@ -1,59 +1,21 @@
 import React from 'react'
+import Section1 from '../Section1Main/Section1'
+import Section2 from '../Section2Main/Section2'
 import './main.css'
-import jugador1 from '../../assets/JugadorTenis/action-athlete-ball-342361.jpg'
-import raqueta from '../../assets/Raquetas/group-10.jpg'
+import jugador from '../../assets/JugadorTenis/action-athlete-ball-342361.jpg'
+import jugador1 from '../../assets/JugadorTenis/action-athlete-ball-342361@2x.jpg'
+import jugador2 from '../../assets/JugadorTenis/action-athlete-ball-342361@3x.jpg'
 
 const Main = ({ }) => {
     return (
         <main>
-            <section className='section1'>
-                <div className='contenedorSpan'>
-                    <span className='spanTennis'>
-                        TENNIS
-                    </span>
-                </div>
-                <div className='contenedorH2'>
-                    <h2>Raquetas.Accesorios.Pelotas.</h2>
-                    <p>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profecional.</p>
-                </div>
-                <div className='contenedorButtonHistoria'>
-                    <button className='buttonHistoria'>HISTORIA →</button>
-                </div>
-
-            </section>
-            <section className='section2' >
-
-
-
-                <div className='setion2Titulo'>
-                    <div>
-                        <h3>Nuestras <span>Raquetas</span></h3>
-                        <p className='section2P'>Conoce nuestras raquetas y aprende a jugar Tennis cómo un profesional.</p>
-                    </div>
-                    <div className='contenedorButtons'>
-                        <button className='button'>◁</button>
-                        <button className='button'>▷</button>
-                    </div>
-                </div>
-
-                <div className='contenedorGenerarlRaqueta'>
-                    <div className='contenedorRaqueta'>
-                        <p className='numeroRaqueta'>1</p>
-                        <img src={raqueta} className='imgRaqueta' alt="Raqueta de tenis" />
-                    </div>
-                    <div className='contenedorRaqueta'>
-                        <p className='numeroRaqueta'>2</p>
-                        <img src={raqueta} className='imgRaqueta' alt="Raqueta de tenis" />
-                    </div>
-                    <div className='contenedorRaqueta'>
-                        <p className='numeroRaqueta'>3</p>
-                        <img src={raqueta} className='imgRaqueta' alt="Raqueta de tenis" />
-                    </div>
-                </div>
-
-            </section>
-
-            <img className='FotoJugador' src={jugador1} alt="Jugador de Tenis" />
+            <Section1 />
+            <Section2 />
+            <img
+                className='FotoJugador'
+                src={jugador}
+                srcSet={`${jugador} x1, ${jugador1} x2, ${jugador2} x3`}
+                alt="Jugador de Tenis" />
         </main>
     )
 }
